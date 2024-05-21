@@ -1,0 +1,115 @@
+@import url(" https://fonts.googleapis.com/css2?family=Aladin&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  background-color: #edefa4;
+  padding: 15px 0;
+  margin: 3% 5% 0 0;
+}
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.register-form {
+  display: flex;
+  color: #8bae33;
+}
+
+.register-form-right {
+  height: fit-content;
+}
+.register-form-left {
+  width: 400px;
+
+  height: fit-content;
+}
+
+.input-box-register {
+  margin: 10px 30px;
+
+  display: block;
+}
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  background: transparent;
+}
+.inputs {
+  position: relative;
+  height: 50px;
+  background: white;
+
+  input {
+    width: 100%;
+    margin-top: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .icon {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+  }
+}
+.instructions {
+  color: red;
+  display: block;
+}
+
+.already_have_account {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14.5px;
+
+  a {
+    color: #8bae33;
+    text-decoration: none;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.errmsg {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.offscreen {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.submit-btn-registration {
+  height: 45px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  padding: 0 150px;
+  margin: 30px;
+  color: white;
+  background-color: #8bae33;
+}

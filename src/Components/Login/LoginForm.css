@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-login{
+  display: flex;
+  width: 100%;
+  height: 85vh;
+}
+.login-image  {
+  display: flex;
+  width: 50%;
+  height: 82.5vh;
+  align-items: center;
+ 
+}
+.login-image img{
+  width: 100%;
+  object-fit: fill;
+}
+.halfPage{
+  display: flex;
+  width: 50%;
+  height: 82.5vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(20, 67, 82, 0.5);
+ 
+}
+.login-logoImage {
+  margin-top: 30px;
+  width: 80px;
+  height: 32px;
+}
+  .login_form .login {
+    width: 100%;
+    padding: 30px;
+  }
+.login .input-box-login {
+    position: relative;
+    height: 30px;
+    background-color: white;
+    margin: 20px 0;
+    border-bottom: 2px solid #144352;
+  }
+    
+
+  .input-box-login  input {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      color: #144352;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      padding-left: 20px;
+      
+    }
+    .input-box-login .icon {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: #144352;
+
+    }
+
+.submit-btn-login{
+  width: 100%;
+      background-color: #FA5E11;
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      padding: 9px 0;
+      color: white;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+  }
+  .submit-btn-login:hover{
+    background-color: #2B89B2;
+    /* color: #144352; */
+  }
+  /* .remember-forgot {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14.5px;
+
+    label input {
+      accent-color: black;
+      margin-right: 4px;
+      align-items: center;
+    }
+    a {
+      color: #8bae33;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  } */
+
+  
+  .register-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 14px;
+    text-align: center;
+  }
+    .register-link  {
+      color: #144352;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    register-link-p{
+      font-weight: 700;
+    }
+    .register-link-p:hover {
+      text-decoration: underline;
+      color: #FA5E11;
+    }
+  
+

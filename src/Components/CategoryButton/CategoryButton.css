@@ -1,0 +1,23 @@
+.category-menu {
+  display: flex;
+  width: 65%;
+  text-align: center;
+  margin: 2rem auto;
+}
+.categoryBtn {
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  padding: 0 10px;
+  color: white;
+  background-color: #092124;
+  transition: all 0.4s cubic-bezier(1, -0.16, 0.6, 1.35);
+}
+.categoryBtn:not(:last-child) {
+  margin-right: 1rem;
+}
+.categoryBtn:hover {
+  background-color: rgb(91, 160, 160);
+  cursor: pointer;
+}

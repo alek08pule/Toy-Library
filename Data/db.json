@@ -1,0 +1,513 @@
+{
+  "toys": [
+    {
+      "Id": 1,
+      "Name": "Fisher-Price Laugh & Learn Smart Stages Chair",
+      "Description": "A colorful interactive chair that teaches numbers, shapes, and more through songs, phrases, and activities. It features Smart Stages technology that allows you to adjust the learning content as your baby grows.",
+      "ImageUrl": "https://m.media-amazon.com/images/I/51LXTMp-PXL.jpg",
+      "Price": 200,
+      "Category": "babies",
+      "id": "6b96"
+    },
+    {
+      "Id": 2,
+      "Name": "Melissa & Doug First Bead Maze",
+      "Description": "A classic wooden bead maze toy designed to develop hand-eye coordination and fine motor skills in babies and toddlers. It features brightly colored beads and sturdy construction.",
+      "ImageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+      "Price": 150,
+      "Category": "babies",
+      "id": "2c91"
+    },
+    {
+      "Id": 3,
+      "Name": "LEGO Classic Creative Bricks",
+      "Description": "A versatile set of LEGO bricks in various colors and shapes, allowing endless building possibilities.",
+      "ImageUrl": "https://m.media-amazon.com/images/I/91fLD7uWcaL.jpg",
+      "Price": 350,
+      "Category": "indoor",
+      "id": "3f21"
+    },
+    {
+      "Id": 4,
+      "Name": "Barbie Dreamhouse",
+      "Description": "A modern, multi-story Barbie Dreamhouse with interactive features, furniture, and accessories for imaginative play.",
+      "ImageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+      "Price": 350,
+      "Category": "indoor",
+      "id": "500d"
+    },
+    {
+      "Id": 5,
+      "Name": "Barbie test ",
+      "Description": "A modern, multi-story Barbie Dreamhouse with interactive features, furniture, and accessories for imaginative play.",
+      "ImageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+      "Price": 350,
+      "Category": "outdoor",
+      "id": "4031"
+    },
+    {
+      "Id": 6,
+      "Name": "Kukla",
+      "Description": "kukla sto zboruva",
+      "ImageUrl": "https://media.istockphoto.com/id/909772478/photo/brown-teddy-bear-isolated-in-front-of-a-white-background.jpg?s=2048x2048&w=is&k=20&c=s8PFeQP9u2IWjER7hy2bXN55DZl3MlL-Ue37AkWB8Jk=",
+      "Price": 200,
+      "Category": "babies",
+      "id": "20f4"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "rents": []
+    },
+    {
+      "id": "7e1c",
+      "userId": "1b7f12c7-9620-4b18-b5a1-5a2a867e28d4",
+      "fullName": "Alek Puleska",
+      "email": "ana@gmail.com",
+      "password": "1234qwer$",
+      "payCard": "123456789121"
+    },
+    {
+      "id": "8d80",
+      "userId": "2bc7844d-1dfa-4f8e-b41b-e6ab31b22701",
+      "fullName": "",
+      "email": "",
+      "password": "",
+      "payCard": ""
+    },
+    {
+      "id": "6468",
+      "userId": "10a9524f-cf98-4515-a0f4-e0e71a173c1a",
+      "fullName": "",
+      "email": "",
+      "password": "",
+      "payCard": ""
+    },
+    {
+      "id": "e304",
+      "userId": "f431d670-8c3b-4644-8d68-4586f7faa6d5",
+      "fullName": "",
+      "email": "",
+      "password": "",
+      "payCard": ""
+    },
+    {
+      "id": "17ef",
+      "userId": "dbd23aaf-736a-4b59-ba01-0977ac83dec4",
+      "fullName": "Puleska Alek",
+      "email": "alek@gmail.com",
+      "password": "alek1234$",
+      "payCard": "123456789121"
+    },
+    {
+      "id": "794a",
+      "userId": "2dfcdee1-fbaa-4b89-a355-3f82ecd593c9",
+      "fullName": "Ana Petreska",
+      "email": "anastasija@gmail.com",
+      "password": "12345678#",
+      "payCard": "222211113333"
+    },
+    {
+      "id": "d77d",
+      "userId": "0be2e848-7f35-45dd-a492-60dc9590c66a",
+      "fullName": "Dejan Petreski",
+      "email": "dejan@gmail.com",
+      "password": "dejan123!",
+      "payCard": "555554321234"
+    },
+    {
+      "id": "913e",
+      "userId": "66a73843-39d5-4fe7-9032-fc14e7893f7e",
+      "fullName": "Dejan Petreski",
+      "email": "dejanP@gmail.com",
+      "password": "1234deni",
+      "payCard": "222254322345"
+    },
+    {
+      "id": "39a3",
+      "userId": "8aec3627-cfea-417f-ae8d-4b4048496024",
+      "fullName": "Mitre Mitreski",
+      "email": "mitre@gmail.com",
+      "password": "9999mitre",
+      "payCard": "123443211234"
+    },
+    {
+      "id": "c765",
+      "userId": "cb6807d5-c671-4c1b-9c57-d7106409ee96",
+      "fullName": "Mitre Mitreski",
+      "email": "mitre@gmail.com",
+      "password": "1234mitre",
+      "payCard": "121234343232"
+    },
+    {
+      "id": "0079",
+      "userId": "f2522c8a-2ac4-4ee2-9f3a-ebae626d4351",
+      "fullName": "Jasna Risteska",
+      "email": "jasna@gmail.com",
+      "password": "jasna123!",
+      "payCard": "121234345656",
+      "userRents": []
+    },
+    {
+      "id": "02a5",
+      "userId": "6b7c0168-cfa3-4fde-a3c3-32275a5d4141",
+      "fullName": "Marija Dukadinovska",
+      "email": "marija@gmail.com",
+      "password": "marija123!",
+      "payCard": "212143436565",
+      "userRents": []
+    }
+  ],
+  "rents": [
+    {
+      "rentsId": 1,
+      "date": "April 23 2024",
+      "rents": [],
+      "id": "0952"
+    },
+    {
+      "0": {
+        "id": 4,
+        "name": "Barbie Dreamhouse",
+        "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+        "price": 350
+      },
+      "id": "7f56"
+    },
+    {
+      "id": "9df0346b-f147-4de9-8b21-6341c13a3585",
+      "date": "2024-05-05T20:17:36.702Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        },
+        {
+          "id": 6,
+          "name": "Kukla",
+          "imageUrl": "https://media.istockphoto.com/id/909772478/photo/brown-teddy-bear-isolated-in-front-of-a-white-background.jpg?s=2048x2048&w=is&k=20&c=s8PFeQP9u2IWjER7hy2bXN55DZl3MlL-Ue37AkWB8Jk=",
+          "price": 200
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "68ab0633-9c62-4df1-8805-aa4ea4cc5a6b",
+      "date": "2024-05-05T20:21:21.769Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "9341d3fd-1877-4886-ba50-26ca0c84e09d",
+      "date": "2024-05-05T20:22:24.072Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "b3f69fa9-77ef-4284-a355-1339ae658aa8",
+      "date": "2024-05-05T20:23:30.293Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "e4d97887-8aa6-401a-b631-883e7db9327b",
+      "date": "2024-05-05T20:24:22.374Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "a4b6b80d-b47a-4ae1-b6ab-d699b2e7fe29",
+      "date": "2024-05-05T20:31:23.639Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "b9ae1a25-db4e-4982-973a-7fb92da7bd94",
+      "date": "2024-05-05T20:35:05.786Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        },
+        {
+          "id": 2,
+          "name": "Melissa & Doug First Bead Maze",
+          "imageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+          "price": 150
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "b8fb0267-7795-45c1-9aaa-986cf39da06a",
+      "date": "2024-05-05T20:37:16.528Z",
+      "toys": [
+        {
+          "id": 3,
+          "name": "LEGO Classic Creative Bricks",
+          "imageUrl": "https://m.media-amazon.com/images/I/91fLD7uWcaL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "a75e7877-2ba8-42bb-8cb9-8fb600ae6cff",
+      "date": "2024-05-06T08:42:09.421Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        },
+        {
+          "id": 2,
+          "name": "Melissa & Doug First Bead Maze",
+          "imageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+          "price": 150
+        },
+        {
+          "id": 2,
+          "name": "Melissa & Doug First Bead Maze",
+          "imageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+          "price": 150
+        },
+        {
+          "id": 2,
+          "name": "Melissa & Doug First Bead Maze",
+          "imageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+          "price": 150
+        },
+        {
+          "id": 2,
+          "name": "Melissa & Doug First Bead Maze",
+          "imageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+          "price": 150
+        },
+        {
+          "id": 2,
+          "name": "Melissa & Doug First Bead Maze",
+          "imageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+          "price": 150
+        },
+        {
+          "id": 2,
+          "name": "Melissa & Doug First Bead Maze",
+          "imageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+          "price": 150
+        },
+        {
+          "id": 2,
+          "name": "Melissa & Doug First Bead Maze",
+          "imageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+          "price": 150
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "f646effb-34bc-446d-a24f-fe94d0580f5b",
+      "date": "2024-05-14T17:21:54.287Z",
+      "toys": [
+        {
+          "id": 2,
+          "name": "Melissa & Doug First Bead Maze",
+          "imageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+          "price": 150
+        },
+        {
+          "id": 3,
+          "name": "LEGO Classic Creative Bricks",
+          "imageUrl": "https://m.media-amazon.com/images/I/91fLD7uWcaL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "829e7952-c18d-450a-85f4-508523b790cf",
+      "date": "2024-05-14T17:27:54.072Z",
+      "toys": [
+        {
+          "id": 6,
+          "name": "Kukla",
+          "imageUrl": "https://media.istockphoto.com/id/909772478/photo/brown-teddy-bear-isolated-in-front-of-a-white-background.jpg?s=2048x2048&w=is&k=20&c=s8PFeQP9u2IWjER7hy2bXN55DZl3MlL-Ue37AkWB8Jk=",
+          "price": 200
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "8fd02841-dccb-4c59-a8fd-ce991c873fe2",
+      "date": "2024-05-14T17:43:59.045Z",
+      "toys": [
+        {
+          "id": 6,
+          "name": "Kukla",
+          "imageUrl": "https://media.istockphoto.com/id/909772478/photo/brown-teddy-bear-isolated-in-front-of-a-white-background.jpg?s=2048x2048&w=is&k=20&c=s8PFeQP9u2IWjER7hy2bXN55DZl3MlL-Ue37AkWB8Jk=",
+          "price": 200
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "afb64438-4e6c-404e-84e7-03c22c49922d",
+      "date": "2024-05-14T17:46:34.434Z",
+      "toys": [
+        {
+          "id": 1,
+          "name": "Fisher-Price Laugh & Learn Smart Stages Chair",
+          "imageUrl": "https://m.media-amazon.com/images/I/51LXTMp-PXL.jpg",
+          "price": 200
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "de6a9bdb-6abc-4d38-8427-cadbf967f0fd",
+      "date": "2024-05-15T08:34:00.955Z",
+      "toys": [
+        {
+          "id": 6,
+          "name": "Kukla",
+          "imageUrl": "https://media.istockphoto.com/id/909772478/photo/brown-teddy-bear-isolated-in-front-of-a-white-background.jpg?s=2048x2048&w=is&k=20&c=s8PFeQP9u2IWjER7hy2bXN55DZl3MlL-Ue37AkWB8Jk=",
+          "price": 200
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "9d2f74c2-d802-4334-9b69-23777d4d26f6",
+      "date": "2024-05-15T08:43:45.230Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "e1ab45b2-970e-4d29-9556-b95f314cb59d",
+      "date": "2024-05-15T08:47:11.117Z",
+      "toys": [
+        {
+          "id": 3,
+          "name": "LEGO Classic Creative Bricks",
+          "imageUrl": "https://m.media-amazon.com/images/I/91fLD7uWcaL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "0bdae80f-bb5b-450f-951c-428f2619dc4d",
+      "date": "2024-05-15T10:26:17.884Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "d4f605b0-37c7-449d-8f53-a166186c8975",
+      "date": "2024-05-17T18:25:03.678Z",
+      "toys": [
+        {
+          "id": 1,
+          "name": "Fisher-Price Laugh & Learn Smart Stages Chair",
+          "imageUrl": "https://m.media-amazon.com/images/I/51LXTMp-PXL.jpg",
+          "price": 200
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "435850be-cacf-48e9-a882-772a97a7ac62",
+      "date": "2024-05-17T18:37:08.337Z",
+      "toys": [
+        {
+          "id": 2,
+          "name": "Melissa & Doug First Bead Maze",
+          "imageUrl": "https://m.media-amazon.com/images/I/41rhhvrCiFL._AC_UF894,1000_QL80_.jpg",
+          "price": 150
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "212a7432-45d3-4aec-8fec-535d113265dc",
+      "date": "2024-05-17T18:42:15.121Z",
+      "toys": [
+        {
+          "id": 1,
+          "name": "Fisher-Price Laugh & Learn Smart Stages Chair",
+          "imageUrl": "https://m.media-amazon.com/images/I/51LXTMp-PXL.jpg",
+          "price": 200
+        }
+      ],
+      "isPaid": true
+    },
+    {
+      "id": "0e3be8d8-c8fe-42d9-919e-6646fb0d2b9e",
+      "userId": "0079",
+      "date": "2024-05-17T19:12:42.147Z",
+      "toys": [
+        {
+          "id": 5,
+          "name": "Barbie test ",
+          "imageUrl": "https://m.media-amazon.com/images/I/71ivc-AvaxL.jpg",
+          "price": 350
+        }
+      ],
+      "isPaid": true
+    }
+  ]
+}

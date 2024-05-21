@@ -1,0 +1,56 @@
+.category-card {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 420px;
+  color: black;
+  margin: 20px;
+  border: 1 solid blue;
+  position: relative;
+  .toy-image {
+    padding: 10px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .info {
+    display: block;
+    padding: 15px 40px;
+    position: absolute;
+    bottom: 15px;
+  }
+  .toy-name {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .toy-description {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .toy-price {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .icons {
+    width: 100%;
+    height: 15px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+    .icon-btn {
+      padding: 5px 10px;
+      border-radius: 50%;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+}
+#root {
+  flex-grow: 1;
+  display: flex;
+ flex-direction: column;
+ font-family: "Nunito Sans", sans-serif;
+}
+.App {
+  
+  width: 100%;
+  height: 100vh;
+  /* align-items: center;
+  justify-content: center; */
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+main {
+  min-width: 100%;
+  min-height: 80vh;
+  height: 82.5vh;
+  margin-top: 50px;
+}
+.homePage {
+  width: 100%;
+  height: 100vh;
+  position:relative;
+  display: flex;
+}
+.homePage img {
+ width: 100%;
+ height: 100vh;
+background-attachment: fixed;
+position:relative;
+z-index: -1;
+}
+.homePage .home-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  color: black;
+  z-index: 2;
+  position:absolute;
+  top:0;
+  left: 0;
+  
+}
+.homePage h1 {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  color:#144352;
+  margin-left: 10%;
+}
+.homePage h3 {
+  margin: 3% 0 7% 10%;
+  color:#2B89B2;
+}
+.homePage p {
+  margin-left: 10%;
+  font-weight: 400;
+  color:black;
+}
+.login-btn button {
+  margin: 10% 0 0 10%;
+  padding: 9px 150px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color: #FA5E11;
+  color: white;
+  justify-self: center;
+  align-self: center;
+  font-size: 14px;
+
+}
+.homePage .side-img {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position:absolute;
+  top:0;
+  right: 0;
+}
+.loginPage {
+  width: 100%;
+  height: 90vh;
+  display: block;
+}
+.main-login{
+  display: flex;
+  width: 100%;
+}
+.libraryPage {
+  width: 100%;
+display: block;
+}
+.CartPage {
+  width: 100%;
+  height: 80vh;
+display: block;
+}
+footer {
+  display: flex;
+   width: 100%;
+height: 40px;
+
+position: absolute;
+bottom: 0;
+
+}
+/* .toggle button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    .toggle {
+      display: none;
+    }
+
+    .nav-link-text ul {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .toggle .showOnMobile {
+      display: flex;
+    }
+
+    .nav-link-text ul {
+      display: none;
+    }
+    .nav-link-text.show ul {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
+      position: absolute;
+      right: 2%;
+      top: 55px;
+      text-decoration: none;
+    }
+  }
+ */

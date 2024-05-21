@@ -1,0 +1,53 @@
+.library-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffff;
+  color: black;
+  padding: 10px 0;
+  border-bottom: solid 2px black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 140px;
+}
+.searchNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  width: 100%;
+}
+.searchForm {
+  display: flex;
+}
+.link-icons{
+  display: flex;
+  
+}
+.rent-card-icon{
+  display: flex;
+  margin-right: 10%;
+}
+.shop-card-icon{
+  font-size: 1.5rem;
+}
+.cart-counter{
+  padding-bottom: 10px;
+}
+.my-profile-icon{
+  font-size: 1.5rem;
+  margin-right: 10%;
+}
+.logout-icon {
+  font-size: 1.5rem;
+  margin-right: 10%;
+}
+.categoryNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+}
