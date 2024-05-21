@@ -1,9 +1,11 @@
 import { FaLock, FaUser } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import "../Register/RegisterForm.css";
+import "./RegisterForm.css";
 import { useState } from "react";
 import { useAddUserMutation } from "../../features/UsersSlice";
 import { v4 as uuidv4 } from "uuid";
+import logo from "../../Assets/logo.png";
+import LibraryBackground from "../../Assets/LibraryBackground.png";
 
 function RegistrationForm({ toggleForm, onRegistrationSuccess }) {
   const [fullName, setFullName] = useState("");
@@ -53,86 +55,77 @@ function RegistrationForm({ toggleForm, onRegistrationSuccess }) {
   };
 
   return (
-    <div className="register">
-      <h1>Register</h1>
-      <form onSubmit={handleRegister}>
-        <div className="register-form">
-          <div className="register-form-left">
-            <div className="input-box-register">
-              <label htmlFor="fullName">Full Name</label>
-              <div className="inputs">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  id="fullName"
-                  onChange={(e) => setFullName(e.target.value)}
-                />
-                <FaUser className="icon" />
-              </div>
-            </div>
-            <div className="input-box-register">
-              <label htmlFor="email">Email address</label>
-              <div className="inputs">
-                <input
-                  type="text"
-                  placeholder="email"
-                  id="email"
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <FaUser className="icon" />
-              </div>
-            </div>
-            <div className="input-box-register">
-              <label htmlFor="password">Password</label>
-              <div className="inputs">
-                <input
-                  type="password"
-                  placeholder="Password"
-                  id="password"
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                <FaLock className="icon" />
-              </div>
-            </div>
-
-            <div className="input-box-register">
-              <label htmlFor="confirm_pwd">Confirm Password</label>
-              <div className="inputs">
-                <input
-                  type="password"
-                  placeholder="Confirm password"
-                  id="Confirm_pwd"
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                />
-                <FaLock className="icon" />
-              </div>
-            </div>
-          </div>
-          <div className="register-form-right">
-            <div className="input-box-register">
-              <label htmlFor="PayCard">Paycard</label>
-              <div className="inputs">
-                <input
-                  type="text"
-                  placeholder="Paycard"
-                  id="PayCard"
-                  onChange={(e) => setPayCard(e.target.value)}
-                />
-              </div>
-            </div>
-
-            <button className="submit-btn" type="submit" disabled={isLoading}>
-              {isLoading ? "Registering..." : "Register"}
-            </button>
-          </div>
+    <main className="register-main">
+      <div className="register">
+        <div className="login-logoImage">
+          <img className="logoImage" src={logo} alt="logo" />
         </div>
-      </form>
-      {errorMessage && <p className="error-message">{errorMessage}</p>}
-      <div className="already_have_account">
-        <p> Already have an account.</p>
-        <p onClick={toggleForm}>Login</p>
+
+        <div className="register-form">
+          <div className="input-box-register">
+            <label htmlFor="fullName">Full Name</label>
+
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="fullName"
+              onChange={(e) => setFullName(e.target.value)}
+            />
+            <FaUser className="icon" />
+          </div>
+          <div className="input-box-register">
+            <label htmlFor="email">Email address</label>
+
+            <input
+              type="text"
+              placeholder="email"
+              id="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <FaUser className="icon" />
+          </div>
+          <div className="input-box-register">
+            <label htmlFor="password">Password</label>
+
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <FaLock className="icon" />
+          </div>
+
+          <div className="input-box-register">
+            <label htmlFor="confirm_pwd">Confirm Password</label>
+
+            <input
+              type="password"
+              placeholder="Confirm password"
+              id="Confirm_pwd"
+              onChange={(e) => setConfirmPassword(e.target.value)}
+            />
+            <FaLock className="icon" />
+          </div>
+          <button
+            className="submit-btn-register"
+            type="submit"
+            onSubmit={handleRegister}
+            disabled={isLoading}
+          >
+            {isLoading ? "Registering..." : "Register"}
+          </button>
+        </div>
+
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
+        <div className="already_have_account">
+          <p> Already have an account.</p>
+          <p className="login-link-p" onClick={toggleForm}>
+            Login
+          </p>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
 
