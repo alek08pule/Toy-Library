@@ -15,15 +15,12 @@ const ToyCard = ({ item }) => {
       <div className="info">
         <div className="toy-name">{item.Name}</div>
         <div className="toy-description">{item.Description}</div>
-        <div className="toy-price">
-          Price: {formatCurrency({ number: item.Price })}{" "}
-        </div>
-        <div className="icons">
-          <button className="icon-btn">
-            <FaHeart />
-          </button>
+        <div className="card-text-wrapper">
+          <div className="toy-price">
+            Price: {formatCurrency({ number: item.Price })}{" "}
+          </div>
           <button
-            className="icon-btn"
+            className="icon-btn add-to-cart"
             onClick={() =>
               dispatch(
                 addItemToCart({
@@ -36,9 +33,12 @@ const ToyCard = ({ item }) => {
             }
           >
             Add to card
-            <FaCartArrowDown />
           </button>
         </div>
+
+        <button className="icon-btn favorite">
+          <FaHeart />
+        </button>
       </div>
     </div>
   );

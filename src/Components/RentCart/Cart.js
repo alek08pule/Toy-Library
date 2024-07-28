@@ -63,29 +63,32 @@ const Cart = ({ userId }) => {
               </div>
               <div className="info">
                 <div className="toy-name">{item.name}</div>
-                <div className="toy-price">
-                  Price: {formatCurrency({ number: item.price })}
-                </div>
-                <div className="icons">
-                  <button
-                    className="remove-btn"
-                    onClick={() => handleRemoveFromCart(item.id)}
-                  >
-                    X
-                  </button>
+
+                <div className="price-wrapper">
+                  <div className="toy-price">
+                    Price: {formatCurrency({ number: item.price })}
+                  </div>
+                  <div className="icons">
+                    <button
+                      className="remove-btn"
+                      onClick={() => handleRemoveFromCart(item.id)}
+                    ></button>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
-          <div className="total-price">
-            <span className="total">
-              Total amount: {formatCurrency({ number: totalPrice })}
-            </span>
-          </div>
-          <div className="rent-btn">
-            <button onClick={handleRentToys} disabled={isLoading}>
-              Rent the toys
-            </button>
+          <div className="footer-buttons">
+            <div className="total-price">
+              <span className="total">
+                Total amount: {formatCurrency({ number: totalPrice })}
+              </span>
+            </div>
+            <div className="rent-btn">
+              <button onClick={handleRentToys} disabled={isLoading}>
+                Rent the toys
+              </button>
+            </div>
           </div>
         </div>
       ) : (

@@ -1,27 +1,31 @@
-import LibraryBackground from "../Assets/LibraryBackground.png";
-import BoyAndTent from "../Assets/BoyAndTent.png";
+import HomeLogo from "../Assets/Logo2White.png";
+import Layer_1 from "../Assets/Layer_1.png";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="homePage">
-      <img src={LibraryBackground} alt="Library Toy" />
-      <div className="home-title">
-        <h1>
-          Imagine a library,
-          <br />
-          but for toys
-        </h1>
-        <h3>Where every wish is real!</h3>
-        <p>
-          With over 200 magical playthings waiting just for you,
-          <br /> the adventure begins here!
-        </p>
-        <Link to="/Login" className="login-btn">
-          <button>LOGIN</button>
-        </Link>
+      <div className="top-nav">
+        <img src={HomeLogo} alt="Logo" />
       </div>
-      <div className="side-img">
-        <img src={BoyAndTent} alt="Tent" />
+      <div className="content">
+        <div className="home-column1">
+          <img src={Layer_1} alt="Tent" />
+        </div>
+        <div className="home-column2">
+          <h1>
+            Imagine a library,
+            <br />
+            but for toys
+          </h1>
+          {/* <h3>Where every wish is real!</h3> */}
+          <p>
+            With over 200 magical playthings waiting just for you,
+            <br /> the adventure begins here!
+          </p>
+          <Link to="/Login" className="login-btn">
+            <button>LOGIN</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

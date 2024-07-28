@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./LoginForm.css";
 import { FaLock } from "react-icons/fa";
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/Logo2White.png";
 import { IoMail } from "react-icons/io5";
-import KidAndAirplane from "../../Assets/KidAndAirplane.png";
+import Layer_1 from "../../Assets/Layer_1.png";
 import { useGetUsersQuery } from "../../features/UsersSlice";
 import { useNavigate } from "react-router-dom";
 
@@ -46,19 +46,18 @@ function LoginForm({ toggleForm, loggedIn, setUserId }) {
   };
 
   return (
-    <main className="main-login">
-      <div className="halfPage">
-        <div className="login-image">
-          <img src={KidAndAirplane} alt="airplane" />
-        </div>
-      </div>
-      <div className="halfPage ">
-        <div className="login_form">
-          <div className="login-logoImage">
-            <img className="logoImage" src={logo} alt="logo" />
+    <main>
+      <div className="content">
+        <div className="home-column1">
+          <div className="login-image">
+            <img src={Layer_1} alt="airplane" />
           </div>
-
-          <div className="login">
+        </div>
+        <div className="home-column2 ">
+          <div className="login_form">
+            <div className="login-logoImage">
+              <img className="logoImage" src={logo} alt="logo" />
+            </div>
             <div className="input-box-login">
               <input
                 type="text"

@@ -14,10 +14,6 @@ const Library = ({ logo, userId }) => {
   const [searchResults, setSearchResults] = useState([]);
   const [buttons, setButtons] = useState(allCategories);
   const [categoryItems, setCategoryItem] = useState([]);
-  // const [isCartOpen, setIsCartOpen] = useState(false);
-  // const toggleCart = () => {
-  //   setIsCartOpen((prevState) => !prevState);
-  // };
 
   const { data: toysData, isLoading, isSuccess, isError } = useGetToysQuery();
 
@@ -74,11 +70,9 @@ const Library = ({ logo, userId }) => {
           setSearch={setSearch}
           handleCategoryClick={handleCategoryClick}
           userId={userId}
-          // toggleCart={toggleCart}
-          // isCartOpen={isCartOpen}
         />
       </nav>
-      <main>
+      <main className="main">
         <LoadPage
           toys={searchResults}
           isLoading={isLoading}
@@ -98,7 +92,6 @@ const Library = ({ logo, userId }) => {
           />
         </Routes>
       </main>
-      <Footer />
     </div>
   );
 };

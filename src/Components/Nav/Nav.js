@@ -45,17 +45,17 @@ const Nav = ({
         <SearchForm search={search} setSearch={setSearch} />
         <div className="link-icons">
           <div className="rent-card-icon" onClick={handleCartClick}>
-            <div className="shop-card-icon">
+            <div className="shop-card-icon top-nav-icon">
               <FaCartShopping />
             </div>
             <div className="cart-counter">{CartCounter.length}</div>
           </div>
 
-          <Link to="/MyProfile">
+          <Link to="/MyProfile" className="top-nav-icon">
             <FaUser className="my-profile-icon" />
           </Link>
-          <Link to="/">
-            <TbLogout2 className="logout-icon" onClick={handleLogout} />
+          <Link to="/" className="top-nav-icon">
+            <span className="header-logout-icon" onClick={handleLogout}></span>
           </Link>
           <div>{error}</div>
         </div>

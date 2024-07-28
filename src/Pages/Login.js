@@ -17,17 +17,16 @@ const Login = ({ logo, setUserId }) => {
   return (
     <div className="loginPage">
       <Header logo={logo} />
-      <main className="main-login">
-        {showLoginForm ? (
-          <LoginForm toggleForm={toggleForm} setUserId={setUserId} />
-        ) : (
-          <RegistrationForm
-            toggleForm={toggleForm}
-            onRegistrationSuccess={handleRegistrationSuccess}
-          />
-        )}
-      </main>
-      <Footer />
+      {/* <main className="main-login"></main> */}
+      {showLoginForm ? (
+        <LoginForm toggleForm={toggleForm} setUserId={setUserId} />
+      ) : (
+        <RegistrationForm
+          toggleForm={toggleForm}
+          onRegistrationSuccess={handleRegistrationSuccess}
+        />
+      )}
+      {/* <Footer /> */}
     </div>
   );
 };

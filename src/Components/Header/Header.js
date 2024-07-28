@@ -1,6 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import { useLogOutMutation } from "../../features/UsersSlice";
+import { FaUser } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
+import "../Nav/Nav.css";
 
 const Header = ({ logo, loggedIn }) => {
   const location = useLocation();
@@ -30,44 +33,43 @@ const Header = ({ logo, loggedIn }) => {
       <ul className="nav-link-text">
         {location.pathname === "/" && !loggedIn && (
           <li className="link-text login">
-            <Link to="/Login">Login</Link>
+            <Link to="/Login"></Link>
           </li>
         )}
         {location.pathname === "/CartPage" && (
           <>
             <li className="link-text">
-              <Link to="/Library">Library</Link>
+              <Link to="/Library">
+                <span className="header-library-icon"></span>
+              </Link>
             </li>
             <li className="link-text">
-              <Link to="/MyProfile">My Profile</Link>
+              {/* <Link to="/MyProfile">My Profile</Link> */}
+              <Link to="/MyProfile" className="top-nav-icon">
+                <FaUser className="my-profile-icon" />
+              </Link>
             </li>
             <li className="link-text logout" onClick={handleLogout}>
-              <Link to="/">Logout</Link>
+              <Link to="/">
+                <span className="header-logout-icon"></span>
+              </Link>
             </li>
           </>
         )}
         {location.pathname === "/MyProfile" && (
           <>
             <li className="link-text">
-              <Link to="/Library">Library</Link>
+              <Link to="/Library">
+                <span className="header-library-icon"></span>
+              </Link>
             </li>
             <li className="link-text logout" onClick={handleLogout}>
-              <Link to="/">Logout</Link>
+              <Link to="/">
+                <span className="header-logout-icon"></span>
+              </Link>
             </li>
           </>
         )}
-        {/* {links
-          .filter((link) => link.path !== location.pathname) // Exclude the link leading to the current path
-          .map((link, index) => (
-            <li
-              key={index}
-              className={`link-text ${link.text.toLowerCase()} ${
-                location.pathname === link.path ? "active" : ""
-              }`}
-            >
-              <Link to={link.path}>{link.text}</Link>
-            </li>
-          ))} */}
       </ul>
     </header>
   );

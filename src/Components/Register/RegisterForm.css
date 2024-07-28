@@ -30,18 +30,10 @@ justify-content: center;
   
 }
 
-.login-logoImage {
-  width: 80px;
-  height: 32px;
-}
-
-
 .input-box-register {
   position: relative;
-    height: 30px;
-    background-color: white;
-    margin: 20px 0;
-    border-bottom: 2px solid #144352;
+  margin: 20px 0;
+  border-bottom: 1px solid #fff;
 }
 
 .input-box-register input {
@@ -71,16 +63,14 @@ justify-content: center;
 
 .already_have_account {
   display: flex;
-
+  align-items: center;
   font-size: 14px;
- 
-  color: #144352;
   text-decoration: none;
-  font-weight: 600;
-
+  gap: 4px;
 }
 .login-link-p {
   font-weight: 700;
+  cursor: pointer;
 }
 .login-link-p:hover {
 text-decoration: underline;

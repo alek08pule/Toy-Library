@@ -16,7 +16,7 @@ const LoadPage = ({ toys, isLoading, isSuccess, isError, categoryItems }) => {
     content = <p>No item found</p>;
   }
 
-  return <main>{content}</main>;
+  return <main className="main-load-page">{content}</main>;
 };
 
 export default LoadPage;

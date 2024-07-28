@@ -1,7 +1,11 @@
-.searchInput{
-    width:  14rem;
-
+.searchInput {
+    width:  100%;
+    outline: none;
+    padding: 4px 12px;
+    border: unset;
+    background-color: unset;
 }
+
 label {
     display: none;
 }
