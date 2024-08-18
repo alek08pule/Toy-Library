@@ -1,11 +1,11 @@
-import HomeLogo from "../Assets/Logo2White.png";
+import logoWhite from "../Assets/Logo2White.png";
 import Layer_1 from "../Assets/Layer_1.png";
 import { Link } from "react-router-dom";
-const Home = () => {
+const Home = ({ logoWhite }) => {
   return (
     <div className="homePage">
       <div className="top-nav">
-        <img src={HomeLogo} alt="Logo" />
+        <img src={logoWhite} alt="Logo" />
       </div>
       <div className="content">
         <div className="home-column1">

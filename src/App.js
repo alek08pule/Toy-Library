@@ -5,6 +5,7 @@ import MyProfile from "./Pages/MyProfile";
 import CartPage from "./Pages/CartPage";
 import NotFound from "./Pages/NotFound";
 import logo from "./Assets/logo.png";
+import logoWhite from "./Assets/Logo2White.png";
 import { useState } from "react";
 
 import { BrowserRouter } from "react-router-dom";
@@ -16,11 +17,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home logo={logo} />} />
+          <Route exact path="/" element={<Home logoWhite={logoWhite} />} />
           <Route
             exact
             path="/Login"
-            element={<Login logo={logo} setUserId={setUserId} />}
+            element={<Login logoWhite={logoWhite} setUserId={setUserId} />}
           />
           <Route
             exact
