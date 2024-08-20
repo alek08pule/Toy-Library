@@ -2,11 +2,10 @@ import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import { useLogOutMutation } from "../../features/UsersSlice";
 import { FaUser } from "react-icons/fa";
-import { FaCartShopping } from "react-icons/fa6";
 import "../Nav/Nav.css";
 // import logoWhite from "./Assets/Logo2White.png";
 
-const Header = ({ logoWhite, loggedIn }) => {
+const Header = ({ logo, loggedIn }) => {
   const location = useLocation();
   const [LogOutMutation] = useLogOutMutation();
 
@@ -28,8 +27,8 @@ const Header = ({ logoWhite, loggedIn }) => {
 
   return (
     <header className="main-header">
-      <Link to="/">
-        <img className="logoImage" src={logoWhite} alt="logo" />
+      <Link to="/" className="link-home">
+        <img className="logoImage" src={logo} alt="logo" />
       </Link>
       <ul className="nav-link-text">
         {location.pathname === "/" && !loggedIn && (

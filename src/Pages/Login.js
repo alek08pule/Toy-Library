@@ -1,8 +1,7 @@
 import { useState } from "react";
-import Header from "../Components/Header/Header";
 import LoginForm from "../Components/Login/LoginForm";
 import RegistrationForm from "../Components/Register/RegistrationForm";
-import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 const Login = ({ logoWhite, setUserId }) => {
   const [showLoginForm, setShowLoginForm] = useState(true);
@@ -14,9 +13,16 @@ const Login = ({ logoWhite, setUserId }) => {
     setShowLoginForm(true);
   };
 
+  const links = [{ path: "/", text: "" }];
+
   return (
     <div className="loginPage">
-      <Header logoWhite={logoWhite} />
+      <div className="top-nav">
+        <Link to="/" className="link-home">
+          <img className="logoImage" src={logoWhite} alt="logo" />
+        </Link>
+      </div>
+      {/* <Header logoWhite={logoWhite} /> */}
       {/* <main className="main-login"></main> */}
       {showLoginForm ? (
         <LoginForm toggleForm={toggleForm} setUserId={setUserId} />
