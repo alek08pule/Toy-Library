@@ -2,11 +2,28 @@ import "./ToyCard.css";
 import { FaCartArrowDown, FaHeart } from "react-icons/fa";
 import formatCurrency from "../Utilities/formatCurrency";
 import { useDispatch } from "react-redux";
-
+import { useAddReactionMutation } from "../../features/ToySlice";
 import { addItemToCart } from "../../features/CartSlice";
+import { useState } from "react";
 
 const ToyCard = ({ item }) => {
   const dispatch = useDispatch();
+  const [addReaction] = useAddReactionMutation();
+  const [heartCount, setHeartCount] = useState(item.reactions?.heart || 0);
+
+  const handleHeartClick = async () => {
+    try {
+      const newHeartCount = heartCount + 1;
+      await addReaction({
+        toysId: item.Id,
+        reactions: { heart: newHeartCount },
+      }).unwrap();
+      setHeartCount(newHeartCount);
+    } catch (error) {
+      console.error("Failed to update reactions: ", error);
+    }
+  };
+
   return (
     <div className="category-card">
       <div className="toy-image" key={item.Id}>
@@ -36,8 +53,8 @@ const ToyCard = ({ item }) => {
           </button>
         </div>
 
-        <button className="icon-btn favorite">
-          <FaHeart />
+        <button className="icon-btn favorite" onClick={handleHeartClick}>
+          <FaHeart /> {heartCount}
         </button>
       </div>
     </div>
